@@ -3597,7 +3597,7 @@ img {
 }
 
 .top-box {
-  background: url(../i/bg.jpg) calc(100% + 140px) no-repeat;
+  background: url(../i/bg.jpg) calc(100%) no-repeat;
   background-size: cover;
   padding-top: 35px;
   position: relative;
@@ -4612,7 +4612,7 @@ textarea.userInput {
 
 @media only screen and (min-width: 992px) {
   .top-box {
-    background: url(../i/bg.jpg) calc(100% + 140px) no-repeat;
+    background: url(../i/bg.jpg) calc(100%) no-repeat;
   }
   .header__nav {
     display: -webkit-box;
@@ -5113,7 +5113,7 @@ textarea.userInput {
 
 @media only screen and (min-width: 1200px) {
   .top-box {
-    background: url(../i/bg.jpg) calc(100% + 140px) no-repeat;
+    background: url(../i/bg.jpg) calc(100%) no-repeat;
     padding: 0 240px;
     padding-top: 35px;
   }
