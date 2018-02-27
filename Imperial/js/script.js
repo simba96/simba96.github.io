@@ -71,6 +71,19 @@ $('.slider').slick({
     draggable: true
 });
 
+
+$('.gallery').slick({
+    autoplay:true,
+    autoplaySpeed:3600,
+    // fade:true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    dotsClass: 'dotes',
+    cssEase: 'linear',
+    draggable: true
+});
 $(document).ready(function () {
 
     $('[data-fancybox="image2"]').fancybox();
