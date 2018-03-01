@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!--<link rel="stylesheet" href="css/style.css">-->
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
@@ -13,120 +12,56 @@
     <title>Отправка формы на почту </title>
 
     <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <style>
-        .dws-container {
-            width: 350px;
-            overflow: hidden;
-        }
-        .formBox {
-            padding: 30px;
-            /*border: 4px solid #8a36a5;*/
-            background: transparent;
-        }
-        .button {
-			background: #95e1d3;
-			color: #ffffff;
-			width: 45%;
-			height: 35px;
-			font-size: 18px;
-			border: none;
-			margin-top: 10px;
-			margin-left: 55%;
-			cursor: pointer;
-			transition: .5s;
-		}
-		.button:hover{
-             background: #b33edc;
-         }
-
-        .inputBox {
-        /*//margin: 0 0 20px;*/
-        }
-        .userInput {
-            position: relative;
-            background: transparent;
-            width: 100%;
-            height: 50px;
-            font-size: 20px;
-            color:  #333333;
-            outline: none;
-            border: none;
-            border-bottom: 1px solid #333333;
-        ;
-        }
-        .inputBox {
-            position: relative;
-            margin: 0 0 20px;
-        }
-        .labelText {
-            position: absolute;
-            line-height: 55px;
-            font-size: 18px;
-            color: #333333;
-            transition: .5s;
-        }
-        .focus .labelText {
-            transform: translateY(-30px);
-            font-size: 14px;
-            color: #b33edc;
-        }
-        textarea.userInput{
-            height: 100px;
-            margin-top: 12px;
-        }
-        .personalDoc,
-        .personalDoc a {
-            color: #858585;
-        }
-        .personalDoc a:hover {
-            text-decoration: none;
-            color: #b33edc;
-        }
-       /*.button {*/
-          /*//  background: #8a36a5;*/
-          /*//  color: #ffffff;*/
-          /*//  width: 45%;*/
-          /*//  height: 35px;*/
-          /*//  font-size: 18px;*/
-          /*//  border: none;*/
-          /*//  margin-top: 10px;*/
-          /*//  margin-left: 55%;*/
-          /*//  cursor: pointer;*/
-          /*//  transition: .5s;*/
-          /*//}*/
-
+    	form {
+    		background-color: #f9f9f9;
+    		padding: 20px;
+    		margin: 20px;
+    	}
     </style>
   </head>
 
   <body>
-    <div class="dws-container">
-      		<form class="formBox" action="mail.php" method="POST">
+    <div class="container">
+
+      <div class="row">
+      	<div class="col-sm-4">
+      		<form action="mail.php" method="POST">
       			<legend>Заголовок формы</legend>
 
-      			<div class="inputBox ">
-      				<label class="labelText" for="">Введите ваше имя</label>
-      				<input type="text" class="userInput" id="" name="user_name" placeholder="Например, Иван">
+      			<div class="form-group">
+      				<label for="">Введите ваше имя</label>
+      				<input type="text" class="form-control" id="" name="user_name" placeholder="Например, Иван">
       			</div>
-
-      			<div class="inputBox ">
-      				<label class="labelText" for="">Введите номер телефона</label>
-      				<input type="text" class="userInput" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
+      		
+      			<div class="form-group">
+      				<label for="">Введите номер телефона</label>
+      				<input type="text" class="form-control" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
       			</div>
-
-      			<div class="inputBox ">
-      				<label class="labelText" for="">Введите email</label>
-      				<input type="text" class="userInput" id="" name="user_email" placeholder="mail@mail.ru">
+      		
+      			<div class="form-group">
+      				<label for="">Введите email</label>
+      				<input type="text" class="form-control" id="" name="user_email" placeholder="mail@mail.ru">
       			</div>
-
-      			<button type="submit" class="button">Отправить форму</button>
+      		
+      			<button type="submit" class="btn btn-primary">Отправить форму</button>
       		</form>
       	</div><!-- .col-sm-4 -->
+      </div> <!-- .row -->
+
+    </div><!-- /.container -->
+
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
 	

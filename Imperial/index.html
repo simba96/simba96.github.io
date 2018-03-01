@@ -16,6 +16,7 @@
             <source src="video/Imperial.mp4" type="video/ogg">
             <source src="video/Imperial.mp4" type="video/webm">
         </video>
+        <div class="bg-box"></div>
         <header  class="header">
             <div class="header__logo-box">
             <nav class="header__nav">
@@ -27,7 +28,6 @@
                     <ul>
                     <li><a class="header__item" href="#">О Компании</a></li>
                     <li><a class="header__item" href="#">Фотоальбом</a></li>
-                    <li><a class="header__item" href="#">Цены</a></li>
                     <li><a class="header__item" href="#">Партнери</a></li>
                     <li><a class="header__item" href="#">Вакансии</a></li>
                     <li><a class="header__item" href="#">Контакты</a></li>
@@ -41,10 +41,22 @@
 </div><!--top-box-->
 <main>
     <div class="main_top">
+        <!--<div class="main_top__bg-box"></div>-->
+        <!--<div class="main_top__top-bg"></div>-->
     <div class="main_top__content">
         <h2 class="main_top__title">О НАС</h2>
         <img class="main_top__img" src="i/light.png" alt="">
     </div>
+        <div class="slider-box__content">
+            <p>Холдинг «Империал» был основан в 1993 году и является лидером по импорту в Украину бананов из стран Латинской Америки.
+
+                Это международная группа компаний, которая имеет представительства в 15-ти регионах Украины, в Эквадоре, Колумбии, Коста-Рике и Мексике. Именно этот импортёр устанавливает высокую планку качества, к которой уже так привык украинский потребитель.
+
+                ГК «Империал» имеет развитую сеть логистических центров, самые крупные из которых расположены в Киеве и Одессе.
+
+                Здесь представлен самый современный парк грузовых автомобилей и рефрижераторов.
+                Сотрудники компании достойно представляют Украину на самых крупных международных выставках. Для повышения уровня квалификации персонал регулярно проходит обучение, в том числе и за рубежом. Всё это гарантирует высокий уровень сервиса, который предоставляет ГК «Империал».</p>
+        </div>
 <div class="main_top__section-slaider">
     <div class="main_top__slider-content">
     <div class="slider wow lightSpeedIn">
@@ -110,29 +122,22 @@
             </div>
         </div>
     </div>
-    <div class="slider-box__content">
-        <p>Холдинг «Империал» был основан в 1993 году и является лидером по импорту в Украину бананов из стран Латинской Америки.<br><br>
-
-            Это международная группа компаний, которая имеет представительства в 15-ти регионах Украины, в Эквадоре, Колумбии, Коста-Рике и Мексике. Именно этот импортёр устанавливает высокую планку качества, к которой уже так привык украинский потребитель.<br><br>
-
-            ГК «Империал» имеет развитую сеть логистических центров, самые крупные из которых расположены в Киеве и Одессе.<br><br>
-
-            Здесь представлен самый современный парк грузовых автомобилей и рефрижераторов.<br><br>
-            Сотрудники компании достойно представляют Украину на самых крупных международных выставках. Для повышения уровня квалификации персонал регулярно проходит обучение, в том числе и за рубежом. Всё это гарантирует высокий уровень сервиса, который предоставляет ГК «Империал».</p>
+        <div class="main_top__video-download">
+        <iframe class="main_top__video"  src="https://www.youtube.com/embed/vNvGPSOt0QU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="main_top__download">
+                <a class="butt" href="Презентация Империал 18.01.17.pdf" download><i class="fa fa-download" aria-hidden="true"></i> Скачать презинтацыю "О Компании"</a>
+            </div>
+        </div>
     </div>
-</div>
-    <iframe class="main_top__video"  src="https://www.youtube.com/embed/vNvGPSOt0QU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<div class="main_top__download">
-    <a class="butt" href="Презентация Империал 18.01.17.pdf" download><i class="fa fa-download" aria-hidden="true"></i> Скачать презинтацыю "О Компании"</a>
-</div>
 </div>
 
     </div>
     <div class="main_center">
+        <div class="main_center__bg-box"></div>
+        <div class="main_center__top-bg"></div>
         <div class="main_center__content">
-            <img class="main_top__img" src="i/light.png" alt="">
             <h2 class="main_center__title">Фотогалерея</h2>
-            <img class="main_top__img" src="i/light.png" alt="">
+            <!--<img class="main_top__img" src="i/light.png" alt="">-->
         </div>
         <div class="main_center__gallery">
 
@@ -142,9 +147,7 @@
                 <a href="i/box/DSC_0236.jpg" data-caption="image 0" data-fancybox="image1">
                 <img src="i/box/DSC_0236.jpg" alt="image 0">
                 </a>
-                <a class="video-box" href="https://www.youtube.com/watch?v=460ajbsNs-0" data-fancybox="video"  data-caption="video">
-                    <p>Нажмите для просмотра видео с <br><span>Благотворительности</span></p>
-                </a>
+                    <p class="video-box">Нажмите для просмотра видео с <br> <span><a  href="https://www.youtube.com/watch?v=460ajbsNs-0" data-fancybox="video"  data-caption="video">Благотворительности</a></span></p>
             </div>
 
             <div class="main_center__gallery-box">
@@ -152,18 +155,15 @@
                 <a href="i/box1/bg-box1.jpg" data-caption="image 0" data-fancybox="image2">
                     <img src="i/box1/bg-box1.jpg" alt="image 0">
                 </a>
-                <a class="video-box" href="https://www.youtube.com/watch?v=6ZGZUuWH6xY" data-fancybox="video"  data-caption="video">
-                    <p>Нажмите для просмотра видео с <br><span>25-летия Империала</span></p>
-                </a>
+                <p class="video-box">Нажмите для просмотра видео с <br> <span><a href="https://www.youtube.com/watch?v=6ZGZUuWH6xY" data-fancybox="video"  data-caption="video">25-летия Империала</a></span></p>
+
             </div>
             <div class="main_center__gallery-box">
                 <h2 class="main_center__gallery-content">Автопарк</h2>
                 <a href="i/box2/DSC_0271.jpg" data-caption="image 0" data-fancybox="image3">
                     <img src="i/box2/DSC_0271.jpg" alt="image 0">
                 </a>
-                <a class="video-box" href="https://www.youtube.com/watch?v=X7ywJE9YawE" data-fancybox="video"  data-caption="video">
-                    <p>Нажмите для просмотра видео с <br> <span>Автопарк</span></p>
-                </a>
+                    <p class="video-box">Нажмите для просмотра видео с <br> <span><a  href="https://www.youtube.com/watch?v=X7ywJE9YawE" data-fancybox="video"  data-caption="video">Автопарк</a></span></p>
             <!--</div>-->
                 </div>
         </div>
@@ -323,8 +323,6 @@
         </div>
     <div class="main_bottom">
         <div class="main_bottom__content">
-            <img class="main_top__img" src="i/light.png" alt="">
-
             <h2 class="main_bottom__title">Партнеры</h2>
             <img class="main_top__img" src="i/light.png" alt="">
         </div>
@@ -342,10 +340,10 @@
         </ul>
     </div>
 <div class="main_footer">
+    <div class="main_footer__bg-box"></div>
+    <div class="main_footer__box-bg"></div>
     <div class="main_footer__content">
-        <img class="main_top__img" src="i/light.png" alt="">
         <h2 class="main_footer__title">Вакансии</h2>
-        <img class="main_top__img" src="i/light.png" alt="">
         <p class="main_footer__text">Если ты успешный, активный, умный, желаешь развиваться, совершенствоваться, готов работать в крупной Компании, тогда мы ждем тебя!</p>
     </div>
     <div class="main_footer__content-box">
@@ -364,7 +362,63 @@
     </div>
     </div>
 </main>
- <footer class="bottom-footer"></footer>
+ <div>
+     <div class="footer_box">
+     <div class="footer_box__content">
+         <h2 class="footer_box__title">Контакты</h2>
+         <img class="main_top__img" src="i/light.png" alt="">
+     </div>
+         <div class="footer_box__content_box">
+     <div class="footer_box__text_box">
+         <div class="footer_box__adress-box">
+         <p >Наши адреса</p>
+         <ul>
+             <li>Офис в г.Киев</li>
+             <li>ул. Симона Петлюры, 28</li>
+             <li>Офис в г.Одесса</li>
+             <li>ул. Дальницкая, 17</li>
+         </ul>
+         </div>
+         <div class="footer_box__telefon-box">
+             <p >Наши телефоны</p>
+             <ul>
+                 <li>Руководитель коммерческого отдела
+                     Перетятая Галина Богдановна
+                     +38 (067) 465-28-32</li>
+                 <li>Руководитель отдела персонала
+                     Божко Юлия Анатольевна
+                     +38 (067) 659-50-34</li>
+                 <li>Директор Одесского филиала
+                     Катанчик Евгений Николаевич
+                     +38 (067) 654-50-37</li>
+             </ul>
+         </div>
+     </div>
+         <div class="footer_box__dws-container">
+         <form class="footer_box__formBox">
+             <div class="inputBox ">
+                 <label class="labelText">Name:</label>
+                 <input class="userInput" type="text" name="name" required>
+             </div>
+             <div class="inputBox">
+                 <label class="labelText ">E-mail:</label>
+                 <input class="userInput" type="email" name="name" required>
+             </div>
+             <div class="inputBox ">
+                 <label class="labelText  ">Phone number:</label>
+                 <input class="userInput" type="phone" name="name" required pattern="\d+">
+             </div>
+             <div class="inputBox">
+                 <input type="checkbox" required>
+                 <label class="personalDoc">I agree to the processing of my<a href="#">personal data</a></label>
+             </div>
+             <input type="submit" value="Send" class="footer_box__button wow shake">
+         </form>
+     </div>
+
+     </div>
+ </div>
+ </footer>
 
 </div>
 <!--<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>-->
