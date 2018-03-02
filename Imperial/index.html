@@ -62,30 +62,39 @@
     <div class="slider wow lightSpeedIn">
         <div class="slider-box">
             <div class="slider-box__img">
-                <img class="" src="i/DSC_2352.jpg" alt="">
+                <a href="i/DSC_2352.jpg" data-caption="image 0" data-fancybox="image-top">
+                    <img src="i/DSC_2352.jpg" alt="image 0">
+                </a>
                 <div class="slider-box__box-hover">
                     <div class="slider-box__hover-content">
-                        <p>Логический центр - порт одесса</p>
+                        <a href="i/DSC_2352.jpg" data-caption="image 0" data-fancybox="image-top"><p>Логический центр - порт одесса</p></a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="slider-box">
             <div class="slider-box__img">
-                <img class="" src="i/autopark.jpg" alt="">
+                <!--<img class="" src="i/autopark.jpg" alt="">-->
+                <!--<a href="i/autopark.jpg" data-caption="image 0" data-fancybox="image-top">-->
+                    <img src="i/autopark.jpg" alt="image 0">
+                <!--</a>-->
                 <div class="slider-box__box-hover">
                     <div class="slider-box__hover-content">
-                        <p>Парк грузовых автомобилей</p>
+                        <!--<a href="i/autopark.jpg" data-caption="image 0" data-fancybox="image-top">-->
+                            <!--<img src="i/autopark.jpg" alt="image 0">-->
+                        <!--</a>-->
+                        <a href="i/autopark.jpg" data-caption="image 0" data-fancybox="image-top"> <p>Парк грузовых автомобилей</p></a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="slider-box">
             <div class="slider-box__img">
-                <img class="" src="i/kamera1.jpg" alt="">
+                    <img src="i/kamera1.jpg" alt="image 0">
+                <!--<img class="" src="i/kamera1.jpg" alt="">-->
                 <div class="slider-box__box-hover">
                     <div class="slider-box__hover-content">
-                        <p>Камера Газации банана</p>
+                        <a href="i/kamera1.jpg" data-caption="image 0" data-fancybox="image-top"><p>Камера Газации банана</p>  </a>
                     </div>
                 </div>
             </div>
@@ -95,7 +104,7 @@
                 <img class="" src="i/kamera2.jpg" alt="">
                 <div class="slider-box__box-hover">
                     <div class="slider-box__hover-content">
-                        <p>Камера Газации банана</p>
+                        <a href="i/kamera2.jpg" data-caption="image 0" data-fancybox="image-top"><p>Камера Газации банана</p></a>
                     </div>
                 </div>
             </div>
@@ -106,7 +115,7 @@
                 <img class="" src="i/proizvodstvo.jpg" alt="">
                 <div class="slider-box__box-hover">
                     <div class="slider-box__hover-content">
-                        <p>Производство</p>
+                        <a href="i/proizvodstvo.jpg" data-caption="image 0" data-fancybox="image-top"><p>Производство</p></a>
                     </div>
                 </div>
             </div>
@@ -116,7 +125,7 @@
                 <img class="" src="i/ramp1.jpg" alt="">
                 <div class="slider-box__box-hover">
                     <div class="slider-box__hover-content">
-                      <p>Рампа приема/Выдачи товара</p>
+                        <a href="i/ramp1.jpg" data-caption="image 0" data-fancybox="image-top"><p>Рампа приема/Выдачи товара</p></a>
                     </div>
                 </div>
             </div>
@@ -364,6 +373,8 @@
 </main>
  <div>
      <div class="footer_box">
+         <!--<div id="map"></div>-->
+         <div class="footer_box__bg-map"></div>
      <div class="footer_box__content">
          <h2 class="footer_box__title">Контакты</h2>
          <img class="main_top__img" src="i/light.png" alt="">
@@ -371,25 +382,25 @@
          <div class="footer_box__content_box">
      <div class="footer_box__text_box">
          <div class="footer_box__adress-box">
-         <p >Наши адреса</p>
+             <p><i class="fa fa-map-marker" aria-hidden="true"></i> Наши адреса</p>
          <ul>
              <li>Офис в г.Киев</li>
              <li>ул. Симона Петлюры, 28</li>
-             <li>Офис в г.Одесса</li>
+             <li class="footer_box__li-pading">Офис в г.Одесса</li>
              <li>ул. Дальницкая, 17</li>
          </ul>
          </div>
          <div class="footer_box__telefon-box">
-             <p >Наши телефоны</p>
+             <p><i class="fa fa-phone" aria-hidden="true"></i> Наши телефоны</p>
              <ul>
                  <li>Руководитель коммерческого отдела
-                     Перетятая Галина Богдановна
+                     Перетятая Галина Богдановна<br>
                      +38 (067) 465-28-32</li>
                  <li>Руководитель отдела персонала
-                     Божко Юлия Анатольевна
+                     Божко Юлия Анатольевна<br>
                      +38 (067) 659-50-34</li>
                  <li>Директор Одесского филиала
-                     Катанчик Евгений Николаевич
+                     Катанчик Евгений Николаевич<br>
                      +38 (067) 654-50-37</li>
              </ul>
          </div>
@@ -412,16 +423,16 @@
                  <input type="checkbox" required>
                  <label class="personalDoc">I agree to the processing of my<a href="#">personal data</a></label>
              </div>
-             <input type="submit" value="Send" class="footer_box__button wow shake">
+             <input type="submit" value="Send" class="footer_box__button  wow shake">
          </form>
      </div>
+
 
      </div>
  </div>
  </footer>
 
 </div>
-<!--<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="js/script.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>

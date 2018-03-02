@@ -105,6 +105,61 @@ $(document).ready(function () {
     $('[data-fancybox="image3"]').fancybox();
 });
 
+$(document).ready(function () {
+
+    $('[data-fancybox="image-top"]').fancybox();
+});
+
+// $('body').append('<buttton class="btn_up" />');
+// function initMap() {
+//     var element = document.getElementById("map");
+//     var options = {
+//     zoom: 5,
+//         center:{lat:50.441877,lng:30.492683}
+//     };
+//     var myMap = new google.maps.Map(element,options);
+//
+//     addMarker({
+//         coordinates:{lat:50.441877,lng:30.492683},
+//         info:'<p class="map-info">Офис в г.Киев\n' +
+//         'ул. Дальницкая, 17,Директор Одесского филиала Катанчик Евгений Николаевич +38 (067) 654-50-37</p>'
+//         });
+//     // Офис в г.Киев
+//     // ул. Симона Петлюры, 28
+//
+//     addMarker({
+//         coordinates:{lat:46.464434,lng:30.707142},
+//         info:'<p class="map-info">Офис в г.Одесса\n' +
+//         'Руководитель коммерческого отдела Перетятая Галина Богдановна +38 (067) 465-28-32\n' +
+//         'Руководитель отдела персонала Божко Юлия Анатольевна +38 (067) 659-50-34</p>'
+//         });
+//     // addMarker({lat:50.441877,lng:30.492683});
+//
+//     function addMarker(properties) {
+//         var marker = new google.maps.Marker({
+//             position: properties.coordinates,
+//             map: myMap
+//         });
+//         if(properties.info)
+//         {
+//             var InfoWindow = new google.maps.InfoWindow({
+//                content:properties.info
+//             });
+//
+//             marker.addListener('click', function () {
+//                 InfoWindow.open(myMap, marker);
+//             });
+//         }
+//     }
+    // var InfoWindow = new google.maps.InfoWindow({
+    //    content:'<p class="map-text">hi there</p>'
+    // });
+    //
+    // marker.addListener('click', function () {
+    //     InfoWindow.open(myMap, marker);
+    // });
+
+// }
 // $(document).ready(function () {
 //
 //     $('[data-fancybox="image2"]').fancybox();
