@@ -11,12 +11,14 @@
 <body>
 <div class=" container">
     <div class=" top-box">
-        <video  loop="loop" muted="muted" autoplay>
-            <source src="video/Imperial.mp4" type="video/mp4">
-            <source src="video/Imperial.mp4" type="video/ogg">
-            <source src="video/Imperial.mp4" type="video/webm">
-        </video>
+        <!--<video  loop="loop" muted="muted" autoplay>-->
+            <!--<source src="video/Imperial.mp4" type="video/mp4">-->
+            <!--<source src="video/Imperial.mp4" type="video/ogg">-->
+            <!--<source src="video/Imperial.mp4" type="video/webm">-->
+        <!--</video>-->
+        <div id="particles-js"></div>
         <div class="bg-box"></div>
+        <div class="img-bg"></div>
         <header  class="header">
             <div class="header__logo-box">
             <nav class="header__nav">
@@ -35,14 +37,17 @@
                 </div>
             </nav>
             </div>
+            <marquee behavior="right">
+                <div class="header__marquee-box"><h2 class="header__marguee">Империал - это Украинская Холдинговая Компания</h2><div ><img src="i/Ukr-img.png" alt=""></div></div>
+            </marquee>
         </header>
-        <h2 class="header__title">ДОБРО ПОЖАЛОВАТЬ <br> В Imperial</h2>
+        <h2 class="header__title">ДОБРО ПОЖАЛОВАТЬ В Imperial</h2>
 
 </div><!--top-box-->
 <main>
     <div class="main_top">
-        <!--<div class="main_top__bg-box"></div>-->
-        <!--<div class="main_top__top-bg"></div>-->
+        <div class="main_top__bg-box"></div>
+        <div class="main_top__top-bg"></div>
     <div class="main_top__content">
         <h2 class="main_top__title">О НАС</h2>
         <img class="main_top__img" src="i/light.png" alt="">
@@ -50,9 +55,9 @@
         <div class="slider-box__content">
             <p>Холдинг «Империал» был основан в 1993 году и является лидером по импорту в Украину бананов из стран Латинской Америки.
 
-                Это международная группа компаний, которая имеет представительства в 15-ти регионах Украины, в Эквадоре, Колумбии, Коста-Рике и Мексике. Именно этот импортёр устанавливает высокую планку качества, к которой уже так привык украинский потребитель.
+                Это международная группа компаний, которая имеет представительства в 15-ти регионах Украины, в Эквадоре, Колумбии, Коста-Рике и Мексике.<br><br> Именно этот импортёр устанавливает высокую планку качества, к которой уже так привык украинский потребитель.
 
-                ГК «Империал» имеет развитую сеть логистических центров, самые крупные из которых расположены в Киеве и Одессе.
+                ГК «Империал» имеет развитую сеть логистических центров, самые крупные из которых расположены в Киеве и Одессе.<br><br>
 
                 Здесь представлен самый современный парк грузовых автомобилей и рефрижераторов.
                 Сотрудники компании достойно представляют Украину на самых крупных международных выставках. Для повышения уровня квалификации персонал регулярно проходит обучение, в том числе и за рубежом. Всё это гарантирует высокий уровень сервиса, который предоставляет ГК «Империал».</p>
@@ -134,7 +139,7 @@
         <div class="main_top__video-download">
         <iframe class="main_top__video"  src="https://www.youtube.com/embed/vNvGPSOt0QU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <div class="main_top__download">
-                <a class="butt" href="Презентация Империал 18.01.17.pdf" download><i class="fa fa-download" aria-hidden="true"></i> Скачать презинтацыю "О Компании"</a>
+                <a class="butt" href="Презентация Империал 18.01.17.pdf" download><i class="fa fa-download" aria-hidden="true"></i> Скачать Презентацию "Империал"</a>
             </div>
         </div>
     </div>
@@ -145,35 +150,61 @@
         <div class="main_center__bg-box"></div>
         <div class="main_center__top-bg"></div>
         <div class="main_center__content">
-            <h2 class="main_center__title">Фотогалерея</h2>
+            <h2 class="main_center__title">Медиа-Галерея</h2>
+            <img class="main_top__img" src="i/light.png" alt="">
             <!--<img class="main_top__img" src="i/light.png" alt="">-->
         </div>
         <div class="main_center__gallery">
 
-            <!--<div class="gallery">-->
+            <div class="gallery">
             <div class="main_center__gallery-box ">
                 <h2 class="main_center__gallery-content pullDown">Выставки</h2>
+                <div class="main_center__content_gallery">
+                    <div class="main_center__gallery_item_box">
                 <a href="i/box/DSC_0236.jpg" data-caption="image 0" data-fancybox="image1">
                 <img src="i/box/DSC_0236.jpg" alt="image 0">
                 </a>
+                    </div>
+                </div>
                     <p class="video-box">Нажмите для просмотра видео с <br> <span><a  href="https://www.youtube.com/watch?v=460ajbsNs-0" data-fancybox="video"  data-caption="video">Благотворительности</a></span></p>
             </div>
 
             <div class="main_center__gallery-box">
                 <h2 class="main_center__gallery-content">25-летия Империала</h2>
+                <div class="main_center__content_gallery">
+                    <div class="main_center__gallery_item_box">
                 <a href="i/box1/bg-box1.jpg" data-caption="image 0" data-fancybox="image2">
                     <img src="i/box1/bg-box1.jpg" alt="image 0">
                 </a>
+                    </div>
+                </div>
                 <p class="video-box">Нажмите для просмотра видео с <br> <span><a href="https://www.youtube.com/watch?v=6ZGZUuWH6xY" data-fancybox="video"  data-caption="video">25-летия Империала</a></span></p>
 
             </div>
             <div class="main_center__gallery-box">
                 <h2 class="main_center__gallery-content">Автопарк</h2>
+                <div class="main_center__content_gallery">
+                <div class="main_center__gallery_item_box">
+                    <p>Легковые</p>
                 <a href="i/box2/DSC_0271.jpg" data-caption="image 0" data-fancybox="image3">
                     <img src="i/box2/DSC_0271.jpg" alt="image 0">
                 </a>
-                    <p class="video-box">Нажмите для просмотра видео с <br> <span><a  href="https://www.youtube.com/watch?v=X7ywJE9YawE" data-fancybox="video"  data-caption="video">Автопарк</a></span></p>
-            <!--</div>-->
+                </div>
+                <div class="main_center__gallery_item_box">
+                    <p>Рефрижераторы</p>
+                    <a href="i/рефрижераторы/refrizheratori-ce-refrizherator-na-gazel-foto_752.jpeg" data-caption="image 0" data-fancybox="image3_2">
+                        <img src="i/рефрижераторы/refrizheratori-ce-refrizherator-na-gazel-foto_752.jpeg" alt="image 0">
+                    </a>
+                </div>
+                <div class="main_center__gallery_item_box">
+                    <p>Контейнеровозы</p>
+                    <a href="i/box2/DSC_0282.jpg" data-caption="image 0" data-fancybox="image3_3">
+                        <img src="i/box2/DSC_0282.jpg" alt="image 0">
+                    </a>
+                </div>
+                </div>
+                    <p class="video-box">Нажмите для просмотра видео с <br> <span><a  href=" https://www.youtube.com/embed/X7ywJE9YawE"  data-fancybox="video"  data-caption="video">Автопарк</a></span></p>
+            </div>
                 </div>
         </div>
         <!--========================================================================================-->
@@ -319,18 +350,37 @@
             <a href="i/box2/DSC_0280.jpg" data-caption="image 0" data-fancybox="image3">
                 <img src="i/box2/DSC_0280.jpg" alt="image 0">
             </a>
-            <a href="i/box2/DSC_0281.jpg" data-caption="image 0" data-fancybox="image3">
+            <a href="i/рефрижераторы/refrizheratori-ce-refrizherator-na-gazel-foto_616.jpeg" data-caption="image 0" data-fancybox="image3_2">
+                <img src="i/рефрижераторы/refrizheratori-ce-refrizherator-na-gazel-foto_616.jpeg" alt="image 0">
+            </a>
+            <a href="i/рефрижераторы/9abfa80dfc92c18f8539b0890acff205.jpg" data-caption="image 0" data-fancybox="image3_2">
+                <img src="i/рефрижераторы/9abfa80dfc92c18f8539b0890acff205.jpg" alt="image 0">
+            </a>
+            <a href="i/рефрижераторы/01(1).jpg" data-caption="image 0" data-fancybox="image3_2">
+                <img src="i/рефрижераторы/01(1).jpg" alt="image 0">
+            </a>
+            <a href="i/рефрижераторы/refrizheratori-ce-refrizherator-na-gazel-foto_751.jpeg" data-caption="image 0" data-fancybox="image3_2">
+                <img src="i/рефрижераторы/refrizheratori-ce-refrizherator-na-gazel-foto_751.jpeg" alt="image 0">
+            </a>
+            <a href="i/рефрижераторы/refrizheratori-ce-refrizherator-na-gazel-foto_752.jpeg" data-caption="image 0" data-fancybox="image3_2">
+                <img src="i/рефрижераторы/refrizheratori-ce-refrizherator-na-gazel-foto_752.jpeg" alt="image 0">
+            </a>
+            <a href="i/box2/DSC_0280.jpg" data-caption="image 0" data-fancybox="image3">
+                <img src="i/box2/DSC_0280.jpg" alt="image 0">
+            </a>
+            <a href="i/box2/DSC_0281.jpg" data-caption="image 0" data-fancybox="image3_3">
                 <img src="i/box2/DSC_0281.jpg" alt="image 0">
             </a>
-            <a href="i/box2/DSC_0282.jpg" data-caption="image 0" data-fancybox="image3">
+            <a href="i/box2/DSC_0282.jpg" data-caption="image 0" data-fancybox="image3_3">
                 <img src="i/box2/DSC_0282.jpg" alt="image 0">
             </a>
-            <a href="i/box2/DSC_0283.jpg" data-caption="image 0" data-fancybox="image3">
+            <a href="i/box2/DSC_0283.jpg" data-caption="image 0" data-fancybox="image3_3">
                 <img src="i/box2/DSC_0283.jpg" alt="image 0">
             </a>
         </div>
         </div>
     <div class="main_bottom">
+        <div class="main_bottom__bg-img"></div>
         <div class="main_bottom__content">
             <h2 class="main_bottom__title">Партнеры</h2>
             <img class="main_top__img" src="i/light.png" alt="">
@@ -434,6 +484,7 @@
 
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/particles.min.js"></script>
 <script src="js/script.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
