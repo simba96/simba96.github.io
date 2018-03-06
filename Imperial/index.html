@@ -28,11 +28,11 @@
                 </div>
                 <div id="nav-menu" class="nav-menu wow bounceInDown">
                     <ul>
-                    <li><a class="header__item" href="#">О Компании</a></li>
-                    <li><a class="header__item" href="#">Фотоальбом</a></li>
-                    <li><a class="header__item" href="#">Партнери</a></li>
-                    <li><a class="header__item" href="#">Вакансии</a></li>
-                    <li><a class="header__item" href="#">Контакты</a></li>
+                    <li><a class="header__item" href="javascript://0" onclick="slowScroll('#abo')">О Компании</a></li>
+                    <li><a class="header__item" href="javascript://0" onclick="slowScroll('#med')">Медиа-Галерея</a></li>
+                    <li><a class="header__item" href="javascript://0" onclick="slowScroll('#par')">Партнери</a></li>
+                    <li><a class="header__item" href="javascript://0" onclick="slowScroll('#vak')">Вакансии</a></li>
+                    <li><a class="header__item" href="javascript://0" onclick="slowScroll('#con')">Контакты</a></li>
                     </ul>
                 </div>
             </nav>
@@ -48,7 +48,7 @@
     <div class="main_top">
         <div class="main_top__bg-box"></div>
         <div class="main_top__top-bg"></div>
-    <div class="main_top__content wow fadeInLeft">
+    <div class="main_top__content wow fadeInLeft" id="abo">
         <h2 class="main_top__title">О НАС</h2>
         <img class="main_top__img" src="i/light.png" alt="">
     </div>
@@ -149,7 +149,7 @@
     <div class="main_center">
         <div class="main_center__bg-box"></div>
         <div class="main_center__top-bg"></div>
-        <div class="main_center__content wow slideInDown">
+        <div class="main_center__content wow slideInDown" id="med">
             <h2 class="main_center__title">Медиа-Галерея</h2>
             <img class="main_top__img" src="i/light.png" alt="">
             <!--<img class="main_top__img" src="i/light.png" alt="">-->
@@ -212,6 +212,15 @@
                 <p class="video-box">Нажмите для просмотра видео с <br> <span><a href="https://www.youtube.com/watch?v=6ZGZUuWH6xY" data-fancybox="video"  data-caption="2017">25-летия Империала</a></span></p>
 
             </div>
+                <div class="main_center__gallery-box ">
+                    <h2 class="main_center__gallery-content pullDown">Благотворительность</h2>
+                    <div class="main_center__content_gallery">
+                        <div class="main_center__gallery_item_box">
+                            <iframe width="420" height="315" src="https://www.youtube.com/embed/460ajbsNs-0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p>2017 год</p>
+                        </div>
+                    </div>
+                </div>
                 </div>
         </div>
         <!--========================================================================================-->
@@ -388,7 +397,7 @@
         </div>
     <div class="main_bottom">
         <div class="main_bottom__bg-img"></div>
-        <div class="main_bottom__content wow zoomInRight">
+        <div class="main_bottom__content wow zoomInRight" id="par">
             <h2 class="main_bottom__title">Партнеры</h2>
             <img class="main_top__img" src="i/light.png" alt="">
         </div>
@@ -408,7 +417,7 @@
 <div class="main_footer">
     <div class="main_footer__bg-box"></div>
     <div class="main_footer__box-bg"></div>
-    <div class="main_footer__content">
+    <div class="main_footer__content" id="vak">
         <h2 class="main_footer__title wow bounceInRight">Вакансии</h2>
         <p class="main_footer__text wow bounceInLeft">Если ты успешный, активный, умный, желаешь развиваться, совершенствоваться, готов работать в крупной Компании, тогда мы ждем тебя!</p>
     </div>
@@ -432,13 +441,13 @@
      <div class="footer_box">
          <!--<div id="map"></div>-->
          <div class="footer_box__bg-map"></div>
-     <div class="footer_box__content wow lightSpeedIn">
+     <div class="footer_box__content wow lightSpeedIn" id="con">
          <h2 class="footer_box__title">Контакты</h2>
          <img class="main_top__img" src="i/light.png" alt="">
      </div>
          <div class="footer_box__content_box ">
      <div class="footer_box__text_box">
-         <div class="footer_box__adress-box wow slideOutLeft">
+         <div class="footer_box__adress-box wow fadeInLeft">
              <p><i class="fa fa-map-marker" aria-hidden="true"></i> Наши адреса</p>
          <ul>
              <li>Офис в г.Киев</li>
@@ -447,7 +456,7 @@
              <li>ул. Дальницкая, 17</li>
          </ul>
          </div>
-         <div class="footer_box__telefon-box wow slideOutRight">
+         <div class="footer_box__telefon-box wow fadeInRight">
              <p><i class="fa fa-phone" aria-hidden="true"></i> Наши телефоны</p>
              <ul>
                  <li>Руководитель коммерческого отдела

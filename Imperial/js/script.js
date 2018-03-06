@@ -273,6 +273,13 @@ $('.btn_up').addClass('active');
         $('.btn_up').removeClass('active');
     }
 });
+function slowScroll(id) {
+    var offset = 0;
+    $('html, body').animate({
+        scrollTop: $(id).offset().top - offset
+    },500);
+    return false;
+}
 // slider-gallery
 // $('body').append('<buttton class="btn_up" />');
 // function initMap() {

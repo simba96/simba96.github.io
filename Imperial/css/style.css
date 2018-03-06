@@ -4541,7 +4541,6 @@ img {
   padding: 5px 10px;
   font-size: 16px;
   font-weight: 700;
-  text-shadow: 0 3px 0 #999999, 0 14px 10px rgba(0, 0, 0, 0.15);
 }
 
 .header__item:hover {
@@ -4577,7 +4576,6 @@ img {
   font-weight: 700;
   line-height: 140px;
   color: white;
-  text-shadow: 0 3px 0 #999999, 0 14px 10px rgba(0, 0, 0, 0.15);
   padding-bottom: 0;
 }
 
@@ -4781,7 +4779,6 @@ main {
 }
 
 .main_center__title {
-  text-shadow: 0 3px 0 #999999, 0 14px 10px rgba(0, 0, 0, 0.15);
   text-transform: uppercase;
   font-size: 35px;
   font-weight: 700;
@@ -4848,10 +4845,10 @@ main {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 28px;
-  text-shadow: 0 3px 0 #999999, 0 14px 10px rgba(0, 0, 0, 0.15);
 }
 
 .main_center__gallery_item_box {
+  text-align: center;
   width: 420px;
 }
 
@@ -4870,7 +4867,6 @@ main {
   text-decoration: none;
   font-weight: 400;
   font-size: 20px;
-  text-shadow: 0 3px 0 #999999, 0 14px 10px rgba(0, 0, 0, 0.15);
 }
 
 .video-box a {
@@ -5016,7 +5012,6 @@ main {
   text-align: center;
   color: white;
   padding-bottom: 70px;
-  text-shadow: 0 3px 0 #999999, 0 14px 10px rgba(0, 0, 0, 0.15);
 }
 
 .main_footer__title {
@@ -5041,10 +5036,6 @@ main {
   color: white;
 }
 
-.main_footer__content-number {
-  text-shadow: 0 3px 0 #999999, 0 14px 10px rgba(0, 0, 0, 0.15);
-}
-
 .main_footer__content-number li {
   padding-top: 20px;
   font-size: 23px;
@@ -5057,7 +5048,6 @@ main {
 }
 
 .main_footer__content-text {
-  text-shadow: 0 3px 0 #999999, 0 14px 10px rgba(0, 0, 0, 0.15);
   font-size: 28px;
   font-weight: 700;
 }
@@ -5077,7 +5067,6 @@ main {
 }
 
 .main_footer__button a {
-  text-shadow: 0 3px 0 #999999, 0 14px 10px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
           box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
   text-decoration: none;
@@ -5160,8 +5149,6 @@ main {
   background-color: #f9f9f9;
   background-image: linear-gradient(#4C596C, transparent 1px);
   background-size: 1.5em 1.5em;
-  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), -1px -1px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), -1px -1px 2px rgba(0, 0, 0, 0.2);
   position: absolute;
   left: 0;
   top: 0;
@@ -5184,7 +5171,6 @@ main {
 
 .footer_box__title {
   text-transform: uppercase;
-  text-shadow: 0 3px 0 #706C61, 0 14px 10px rgba(0, 0, 0, 0.15);
   font-size: 30px;
   font-weight: 700;
   padding-bottom: 15px;
@@ -5209,14 +5195,12 @@ main {
 }
 
 .footer_box__content_box p {
-  text-shadow: 0 3px 0 #706C61, 0 14px 10px rgba(0, 0, 0, 0.15);
   text-transform: uppercase;
   font-weight: 400;
   font-size: 25px;
 }
 
 .footer_box__content_box ul li {
-  text-shadow: 0 3px 0 #706C61, 0 14px 10px rgba(0, 0, 0, 0.15);
   font-size: 20px;
   font-weight: 700;
 }
@@ -5301,7 +5285,6 @@ main {
 }
 
 .labelText {
-  text-shadow: 0 3px 0 #706C61, 0 14px 10px rgba(0, 0, 0, 0.15);
   position: absolute;
   line-height: 55px;
   font-size: 22px;
