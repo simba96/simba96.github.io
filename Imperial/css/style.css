@@ -4640,9 +4640,8 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   color: #999999;
 }
 
@@ -4665,7 +4664,7 @@ main {
 }
 
 .main_top__video {
-  width: 650px;
+  width: 620px;
   height: 240px;
 }
 
@@ -5326,6 +5325,18 @@ textarea.userInput {
   right: 0;
   bottom: 0;
   width: 100%;
+}
+
+.btn-menu {
+  margin-top: 100px;
+  padding: 10px 70px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: white;
+  font-weight: 700;
+  border: 2px solid white;
+  cursor: pointer;
 }
 
 .slider {

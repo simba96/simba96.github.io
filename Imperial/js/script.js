@@ -280,6 +280,43 @@ function slowScroll(id) {
     },500);
     return false;
 }
+// function openbox(menu_box) {
+//     display= document.getElementById('menu_box').style.display;
+//     if (display == "none"){
+//         document.getElementById('menu_box').style.display='block';
+//     }
+//     else {
+//         document.getElementById('menu_box').style.display='none';
+//     }
+//
+// //
+// }
+$(function () {
+    $('.menu_box').hide();
+    $('button.btn-menu').click(function () {
+        $('.menu_box').slideToggle('slow');
+    });
+    // $('h2.btn-menu').slideToggle('slow');
+});
+$(function () {
+    $('.newscontent').hide();
+    $('h2.newstitle').click(function () {
+        // $('.newscontent').slideToggle('slow');===================
+        $(this).next().slideToggle('slow').siblings('div:visible').slideUp('slow');
+    });
+});
+// $(document).ready(function() {
+//     $("A#trigger").toggle(function() {
+//             // Отображаем скрытый блок
+//             $("DIV#box").fadeIn(); // fadeIn - плавное появление
+//             return false; // не производить переход по ссылке
+//         },
+//         function() {
+//             // Скрываем блок
+//             $("DIV#box").fadeOut(); // fadeOut - плавное исчезновение
+//             return false; // не производить переход по ссылке
+//         }); // end of toggle()
+// }); // end of ready()
 // slider-gallery
 // $('body').append('<buttton class="btn_up" />');
 // function initMap() {
