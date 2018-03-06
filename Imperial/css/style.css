@@ -4640,8 +4640,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #999999;
 }
 
@@ -4743,7 +4744,7 @@ main {
 }
 
 .main_center {
-  padding-bottom: 80px;
+  padding-bottom: 200px;
   position: relative;
 }
 
@@ -4903,6 +4904,7 @@ main {
 
 .main_bottom {
   position: relative;
+  padding: 0 80px;
 }
 
 .main_bottom__content {
@@ -5536,7 +5538,7 @@ textarea.userInput {
 .btn_up {
   position: fixed;
   bottom: -50px;
-  right: 50px;
+  right: 30px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -5579,5 +5581,5 @@ textarea.userInput {
 }
 
 .btn_up.active {
-  bottom: 50px;
+  bottom: 100px;
 }
