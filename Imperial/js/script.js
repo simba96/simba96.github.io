@@ -100,29 +100,13 @@ $(".userInput").focus(function () {
 $(document).ready(function () {
 
     $('[data-fancybox="image2"]').fancybox();
-});
-
-$(document).ready(function () {
-
     $('[data-fancybox="image1"]').fancybox();
-});
-$(document).ready(function () {
-
     $('[data-fancybox="image3"]').fancybox();
-});
-
-$(document).ready(function () {
-
     $('[data-fancybox="image-top"]').fancybox();
-});
-$(document).ready(function () {
-
     $('[data-fancybox="video"]').fancybox();
+
+
 });
-// $(".buttonnn").click(function(){
-//     $("video").toggleClass(".muted=\"muted\"");
-// });
-// $("video").addClass("muted=.muted");
 
 particlesJS('particles-js',
 
@@ -136,7 +120,7 @@ particlesJS('particles-js',
                 }
             },
             "color": {
-                "value": "#ffffff"
+                "value": "#333"
             },
             "shape": {
                 "type": "circle",
@@ -176,7 +160,7 @@ particlesJS('particles-js',
             "line_linked": {
                 "enable": true,
                 "distance": 150,
-                "color": "#ffffff",
+                "color": "#333",
                 "opacity": 0.4,
                 "width": 1
             },
@@ -231,20 +215,11 @@ particlesJS('particles-js',
                     "particles_nb": 2
                 }
             }
-        },
-        "retina_detect": true,
-        "config_demo": {
-            "hide_card": false,
-            "background_color": "#b61924",
-            "background_image": "",
-            "background_position": "50% 50%",
-            "background_repeat": "no-repeat",
-            "background_size": "cover"
         }
     }
 
 );
-$('.gallery').slick({
+$('.slaider_autoparc').slick({
     // autoplay:true,
     // autoplaySpeed:3600,
     // fade:true,
@@ -298,13 +273,100 @@ $(function () {
     });
     // $('h2.btn-menu').slideToggle('slow');
 });
-$(function () {
-    $('.newscontent').hide();
-    $('h2.newstitle').click(function () {
-        // $('.newscontent').slideToggle('slow');===================
-        $(this).next().slideToggle('slow').siblings('div:visible').slideUp('slow');
-    });
-});
+
+// document.body.onload =function () {
+//     setTimeout(function () {
+//         var preLoader= document.getElementById('page-preloader');
+//         if ( !preLoader.classList.contains('done'))
+//         {
+//             preLoader.classList.add('done');
+//         }
+//     },1000);
+// };
+
+var
+    images = document.images,
+    images_total_count = images.length,
+    images_loaded_count = 0,
+preLoader= document.getElementById('page-preloader'),
+perc_display = document.getElementById('load_pers');
+for (var i = 0; i<images_total_count; i++ )
+{
+    image_clone = new Image ();
+    image_clone.onload = images_loaded;
+    image_clone.onerror = images_loaded;
+    image_clone.src = images [i].src;
+
+}
+function images_loaded() {
+    images_loaded_count++;
+    perc_display.innerHTML = (( (100 / images_total_count) * images_loaded_count) << 0 )+'%';
+    if (images_loaded_count >= images_total_count)
+    {
+            setTimeout(function () {
+                if ( !preLoader.classList.contains('done'))
+                {
+                    preLoader.classList.add('done');
+                }
+            },1000);
+        }
+}
+
+
+
+
+// $(function () {
+//     $('.newscontent').hide();
+//     $('h2.newstitle').click(function () {
+//         // $('.newscontent').slideToggle('slow');===================
+//         $(this).next().slideToggle('slow').siblings('div:visible').slideUp('slow');
+//     });
+// });
+// var granimInstance = new Granim({
+//     element: '#canvas-basic',
+//     direction: 'diagonal',
+//     opacity: [1, 1],
+//     states : {
+//         "default-state": {
+//             gradients: [
+//                 ['#445193', '#EAC435'],
+//                 // ['#028090', '#AAFF00'],
+//                 ['#AAFF00', '#028090'],
+//                 ['#FF9400', '#02394A'],
+//                 ['#EAC435', '#345995'],
+//                 ['#FFFD82', '#7BA800']
+//
+//
+//             ],
+//             transitionSpeed: 3500
+//         }
+//     }
+// });
+// var granimInstance = new Granim({
+//     element: '#canvas-center',
+//     direction: 'diagonal',
+//     opacity: [1, 1],
+//     states : {
+//         "default-state": {
+//             gradients: [
+//                 ['#FFFD82', '#7BA800'],
+//                 ['#445193', '#EAC435'],
+//                 // ['#028090', '#AAFF00'],
+//                 ['#AAFF00', '#028090'],
+//                 ['#EAC435', '#345995'],
+//                 ['#FF9400', '#02394A'],
+//                 // ['#EAC435', '#345995'],
+//                 // ['#FFFD82', '#7BA800']
+//
+//
+//             ],
+//             transitionSpeed: 3500
+//         }
+//     }
+// });
+// $(window).scroll(function () {
+//    $('header').css({'top': -$(window).scrollTop()/3});
+// });
 // $(document).ready(function() {
 //     $("A#trigger").toggle(function() {
 //             // Отображаем скрытый блок

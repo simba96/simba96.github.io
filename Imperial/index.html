@@ -7,26 +7,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <!--<script src="js/plugin.js"></script>-->
+    <!--<script src="js/pereloader.js"></script>-->
 </head>
 <body>
+<div id="page-preloader" class="preloader-2">
+    <div class="loader"><span id="load_pers">0%</span></div>
+</div>
+
 <div class=" container">
-    <div class=" top-box">
+    <div id="particles-js"></div>
+
+    <div class=" top-box" >
         <!--<video  loop="loop" muted="muted" autoplay>-->
             <!--<source src="video/Imperial.mp4" type="video/mp4">-->
             <!--<source src="video/Imperial.mp4" type="video/ogg">-->
             <!--<source src="video/Imperial.mp4" type="video/webm">-->
         <!--</video>-->
-        <div id="particles-js"></div>
-        <div class="bg-box"></div>
-        <div class="img-bg"></div>
-        <header  class="header">
+        <!--<div id="particles-js"></div>-->
+        <!--<div class="bg-box"></div>-->
+        <header>
+        <div class="img-bg wow zoomInUp" ></div>
+        <div  class="header">
             <div class="header__logo-box">
             <nav class="header__nav">
-                <h1 class="headtitle">IMPERIAL</h1><img class="header__logo-img wow flip" src="i/favicon.png" alt="">
+                <h1 class="headtitle">IMPERIAL</h1><img class="header__logo-img wow flip"   src="i/favicon.png" alt="">
                 <div id="switch-menu" data-switch="#nav-menu" class="switch-menu">
                     <span></span><span></span><span></span>
                 </div>
-                <div id="nav-menu" class="nav-menu wow bounceInDown">
+                <div id="nav-menu" class="nav-menu wow bounceInDown" >
                     <ul>
                     <li><a class="header__item" href="javascript://0" onclick="slowScroll('#abo')">О Компании</a></li>
                     <li><a class="header__item" href="javascript://0" onclick="slowScroll('#med')">Медиа-Галерея</a></li>
@@ -40,19 +49,22 @@
             <marquee behavior="right">
                 <div class="header__marquee-box"><h2 class="header__marguee">Империал - это Украинская Холдинговая Компания</h2><div ><img src="i/Ukr-img.png" alt=""></div></div>
             </marquee>
+        </div>
+        <h2 class="header__title wow bounceInUp" >ДОБРО ПОЖАЛОВАТЬ В Imperial</h2>
         </header>
-        <h2 class="header__title wow zoomIn">ДОБРО ПОЖАЛОВАТЬ В Imperial</h2>
-
 </div><!--top-box-->
 <main>
-    <div class="main_top">
-        <div class="main_top__bg-box"></div>
-        <div class="main_top__top-bg"></div>
-    <div class="main_top__content wow fadeInLeft" id="abo">
+    <div class="parallax-window" data-parallax="scroll" data-speed="0.1" data-image-src="i/imperial1.jpg">
+    <div class="main_top__content wow fadeInLeft" data-wow-duration=".5s" data-wow-delay="1s" id="abo">
         <h2 class="main_top__title">О НАС</h2>
-        <img class="main_top__img" src="i/light.png" alt="">
+        <!--<img class="main_top__img" src="i/light.png" alt="">-->
     </div>
-        <div class="slider-box__content wow fadeInRight">
+    </div>
+    <div class="main_top">
+        <!--<div id="#particles-js"></div>-->
+        <!--<div class="canvas-basic"></div>-->
+        <!--<div class="main_top__bg-box"></div>-->
+        <div class="slider-box__content wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
             <p>Холдинг «Империал» был основан в 1993 году и является лидером по импорту в Украину бананов из стран Латинской Америки.
 
                 Это международная группа компаний, которая имеет представительства в 15-ти регионах Украины, в Эквадоре, Колумбии, Коста-Рике и Мексике.<br><br> Именно этот импортёр устанавливает высокую планку качества, к которой уже так привык украинский потребитель.
@@ -64,7 +76,7 @@
         </div>
 <div class="main_top__section-slaider">
     <div class="main_top__slider-content">
-    <div class="slider wow lightSpeedIn">
+    <div class="slider wow lightSpeedIn" data-wow-duration=".5s" data-wow-delay="1s">
         <div class="slider-box">
             <div class="slider-box__img">
                 <a href="i/DSC_2352.jpg" data-caption="image 0" data-fancybox="image-top">
@@ -137,91 +149,126 @@
         </div>
     </div>
         <div class="main_top__video-download">
-        <iframe class="main_top__video "  src="https://www.youtube.com/embed/vNvGPSOt0QU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <div class="main_top__download wow fadeInUp">
-                <a class="butt" href="Презентация Империал 18.01.17.pdf" download><i class="fa fa-download" aria-hidden="true"></i> Скачать Презентацию "Империал"</a>
-            </div>
+        <iframe class="main_top__video wow zoomInRight" data-wow-duration="2s" data-wow-delay="1s"  src="https://www.youtube.com/embed/vNvGPSOt0QU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe class="main_top__video1 wow zoomInLeft" data-wow-duration="2s" data-wow-delay="1s"  src="https://www.youtube.com/embed/6ZGZUuWH6xY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
     </div>
+    <div class="main_top__download wow wobble" data-wow-duration="2s" data-wow-delay="1s" data-wow-iteration="2">
+        <a class="butt" href="Презентация Империал 18.01.17.pdf" download><i class="fa fa-download" aria-hidden="true"></i> Скачать Презентацию "Империал"</a>
+    </div>
+
 </div>
 
+    </div> <!--main-top-->
+    <div class="parallax-window wow bounceIn"  data-wow-duration="2s" data-wow-delay="2s" data-parallax="scroll" data-speed="0.1" data-image-src="i/imperial2.jpg">
+    <div class="main_center__content" id="med">
+        <h2 class="main_center__title ">Медиа-Галерея</h2>
+        <!--<img class="main_top__img" src="i/light.png" alt="">-->
+        <!--<img class="main_top__img" src="i/light.png" alt="">-->
+    </div>
     </div>
     <div class="main_center">
-        <div class="main_center__bg-box"></div>
-        <div class="main_center__top-bg"></div>
-        <div class="main_center__content wow slideInDown" id="med">
-            <h2 class="main_center__title">Медиа-Галерея</h2>
-            <img class="main_top__img" src="i/light.png" alt="">
+        <!--<div class="main_center__bg-box"></div>-->
+        <canvas id="canvas-center"></canvas>
+        <!--<div class="main_center__top-bg"></div>-->
+        <!--<div class="main_center__content wow slideInDown" id="med">-->
+            <!--<h2 class="main_center__title">Медиа-Галерея</h2>-->
             <!--<img class="main_top__img" src="i/light.png" alt="">-->
-        </div>
-        <div class="main_center__gallery wow lightSpeedIn">
+            <!--&lt;!&ndash;<img class="main_top__img" src="i/light.png" alt="">&ndash;&gt;-->
+        <!--</div>-->
+        <div class="main_center__gallery ">
 
-            <div class="gallery">
-                <div class="main_center__gallery-box">
-                    <h2 class="main_center__gallery-content">Автопарк </h2>
-                    <div class="main_center__content_gallery">
+            <!--<div class="gallery">-->
+                <div class="main_center__gallery-box" >
+                    <h2 class="main_center__gallery-content wow lightSpeedIn" data-wow-duration="1s" data-wow-delay="2s">Наш транспорт</h2>
+                    <!--<div class="main_center__content_gallery">-->
+                        <div class="slaider_autoparc wow bounceIn"  data-wow-duration="2s" data-wow-delay="2s">
+                        <div class="main_center__gallery_item_box">
+                            <p>Грузовики</p>
+                            <a href="i/box2/DSC_0282.jpg" data-caption="2017" data-fancybox="image3_3">
+                                <img src="i/box2/DSC_0282.jpg" alt="2017">
+                            </a>
+                            <p class="main_center__gallery_item_text">2017 год</p>
+                        </div>
+                        <div class="main_center__gallery_item_box">
+                            <p>Развозчики</p>
+                            <a href="i/грузовые/^F8DFBD1C679CFAFC509F0283B56969C2AD9A5B05D8540E4F9E^pimgt1_distr.jpg" data-caption="2017" data-fancybox="image3_2">
+                                <img src="i/грузовые/^F8DFBD1C679CFAFC509F0283B56969C2AD9A5B05D8540E4F9E^pimgt1_distr.jpg" alt="2017">
+                            </a>
+                            <p class="main_center__gallery_item_text">2017 год</p>
+                        </div>
                         <div class="main_center__gallery_item_box">
                             <p >Легковые</p>
                             <a href="i/box2/DSC_0271.jpg" data-caption="2017" data-fancybox="image3">
                                 <img src="i/box2/DSC_0271.jpg" alt="2017">
                             </a>
-                            <p>2017 год</p>
+                            <p class="main_center__gallery_item_text">2017 год</p>
                         </div>
-                        <div class="main_center__gallery_item_box">
-                            <p>Рефрижераторы</p>
-                            <a href="i/рефрижераторы/refrizheratori-ce-refrizherator-na-gazel-foto_752.jpeg" data-caption="2017" data-fancybox="image3_2">
-                                <img src="i/рефрижераторы/refrizheratori-ce-refrizherator-na-gazel-foto_752.jpeg" alt="2017">
-                            </a>
-                            <p>2017 год</p>
-                        </div>
-                        <div class="main_center__gallery_item_box">
-                            <p>Контейнеровозы</p>
-                            <a href="i/box2/DSC_0282.jpg" data-caption="2017" data-fancybox="image3_3">
-                                <img src="i/box2/DSC_0282.jpg" alt="2017">
-                            </a>
-                            <p>2017 год</p>
-                        </div>
-
+                            <div class="main_center__gallery_item_box">
+                                <p>Автопарк</p>
+                                <iframe width="471" height="239" src="https://www.youtube.com/embed/X7ywJE9YawE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <p class="main_center__gallery_item_text">2017 год</p>
+                            </div>
                     </div>
-                    <p class="video-box">Нажмите для просмотра видео с <br> <span><a  href=" https://www.youtube.com/embed/X7ywJE9YawE"  data-fancybox="video"  data-caption="2017">Автопарк</a></span></p>
-                </div>
+                    <div class="main_center__gallery-box ">
+                        <h2 class="main_center__gallery-content pullDown wow fadeInRight"  data-wow-duration="1s" data-wow-delay="2s">Наша благотворительность</h2>
+                        <div class="slaider_autoparc wow fadeInLeft" data-wow-duration="2s" data-wow-delay="2s">
+                            <div class="main_center__gallery_item_box">
+                                <p>Одесская городская школа-интернат №5</p>
+                                <iframe width="471" height="239" src="https://www.youtube.com/embed/460ajbsNs-0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <p class="main_center__gallery_item_text">2017 год</p>
+                            </div>
+                            <div class="main_center__gallery_item_box">
+                                <p>Одесская городская школа-интернат №5</p>
+                                <iframe width="471" height="239" src="https://www.youtube.com/embed/460ajbsNs-0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <p class="main_center__gallery_item_text">2017 год</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<p class="video-box">Нажмите для просмотра видео с <br> <span><a  href=" https://www.youtube.com/embed/X7ywJE9YawE"  data-fancybox="video"  data-caption="2017">Автопарк</a></span></p>-->
+                <!--</div>-->
 
             <div class="main_center__gallery-box ">
-                <h2 class="main_center__gallery-content pullDown">Выставки </h2>
-                <div class="main_center__content_gallery">
-                    <div class="main_center__gallery_item_box">
+                <h2 class="main_center__gallery-content pullDown wow flipInX" data-wow-duration="2s" data-wow-delay="2s">Выставки </h2>
+                <div class="slaider_autoparc wow flipInY" data-wow-duration="2s" data-wow-delay="2s">
+                    <div class="main_center__gallery_item_box ">
+                        <p>Германия</p>
                 <a href="i/box/DSC_0236.jpg" data-caption="2017" data-fancybox="image1">
                 <img src="i/box/DSC_0236.jpg" alt="2017">
                 </a>
-                        <p>2017 год</p>
+                        <p class="main_center__gallery_item_text">2017 год</p>
+                    </div>
+                    <div class="main_center__gallery_item_box">
+                        <p>Германия</p>
+                        <a href="i/box/DSC_0236.jpg" data-caption="2017" data-fancybox="image1">
+                            <img src="i/box/DSC_0236.jpg" alt="2017">
+                        </a>
+                        <p class="main_center__gallery_item_text">2017 год</p>
                     </div>
                 </div>
-                    <p class="video-box">Нажмите для просмотра видео с <br> <span><a  href="https://www.youtube.com/watch?v=460ajbsNs-0" data-fancybox="video"  data-caption="2017">Благотворительности</a></span></p>
+                    <!--<p class="video-box">Нажмите для просмотра видео с <br> <span><a  href="https://www.youtube.com/watch?v=460ajbsNs-0" data-fancybox="video"  data-caption="2017">Благотворительности</a></span></p>-->
             </div>
 
             <div class="main_center__gallery-box">
-                <h2 class="main_center__gallery-content">25-летия Империала </h2>
-                <div class="main_center__content_gallery">
+                <h2 class="main_center__gallery-content wow slideInUp" data-wow-duration="2s" data-wow-delay="2s">Наш Империал</h2>
+                <div class="slaider_autoparc wow zoomInRight" data-wow-duration="2s" data-wow-delay="1s">
                     <div class="main_center__gallery_item_box">
+                        <p>25-летия Империала</p>
                 <a href="i/box1/bg-box1.jpg" data-caption="2017" data-fancybox="image2">
                     <img src="i/box1/bg-box1.jpg" alt="2017">
                 </a>
-                        <p>2018 год</p>
+                        <p class="main_center__gallery_item_text">2018 год</p>
+                    </div>
+                    <div class="main_center__gallery_item_box">
+                        <p>25-летия Империала</p>
+                        <iframe width="471" height="239" src="https://www.youtube.com/embed/6ZGZUuWH6xY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <p class="main_center__gallery_item_text">2017 год</p>
                     </div>
                 </div>
-                <p class="video-box">Нажмите для просмотра видео с <br> <span><a href="https://www.youtube.com/watch?v=6ZGZUuWH6xY" data-fancybox="video"  data-caption="2017">25-летия Империала</a></span></p>
-
             </div>
-                <div class="main_center__gallery-box ">
-                    <h2 class="main_center__gallery-content pullDown">Благотворительность</h2>
-                    <div class="main_center__content_gallery">
-                        <div class="main_center__gallery_item_box">
-                            <iframe width="420" height="315" src="https://www.youtube.com/embed/460ajbsNs-0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            <p>2017 год</p>
-                        </div>
                     </div>
-                </div>
-                </div>
+
+                <!--</div>-->
         </div>
         <!--========================================================================================-->
         <div class="main_center__gallery-hide">
@@ -395,32 +442,37 @@
             </a>
         </div>
         </div>
+    <div class="parallax-window" data-parallax="scroll" data-speed="0.1" data-image-src="i/imperial3.jpg">
+    <div class="main_bottom__content " id="par">
+        <h2 class="main_bottom__title wow zoomInRight" data-wow-duration="2s" data-wow-delay="1s">Партнеры</h2>
+        <!--<img class="main_top__img" src="i/light.png" alt="">-->
+    </div>
+    </div>
     <div class="main_bottom">
-        <div class="main_bottom__bg-img"></div>
-        <div class="main_bottom__content wow zoomInRight" id="par">
-            <h2 class="main_bottom__title">Партнеры</h2>
-            <img class="main_top__img" src="i/light.png" alt="">
-        </div>
-        <ul class="wow jackInTheBox">
-            <li><a class="partners_item" href="http://www.atbmarket.com/" target="_blank"><img src="i/partners/ATB.png" alt=""></a></li>
-            <li><a class="partners_item" href="http://novus.com.ua/uk" target="_blank"><img src="i/partners/novus.png" alt=""></a></li>
-            <li><a class="partners_item" href="http://www.eko.com.ua/" target="_blank"><img src="i/partners/ekomarket.jpg" alt=""></a></li>
-            <li><a class="partners_item" href="http://www.billa.ua/StartPage/%D0%93%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0_/dd_bi_mainpage.aspx" target="_blank"><img src="i/partners/billa.jpg" alt=""></a></li>
-            <li><a class="partners_item" href="http://freshbaza.com.ua/" target="_blank"><img src="i/partners/frashbaza.jpg" alt=""></a></li>
-            <li><a class="partners_item" href="https://megamarket.ua/" target="_blank"><img src="i/partners/megamarket.png" alt=""></a></li>
-            <li><a class="partners_item" href="https://karavan.com.ua/" target="_blank"><img src="i/partners/Karavan-gipermarket.png" alt=""></a></li>
-            <li><a class="partners_item" href="http://kishenya.ua/ru/" target="_blank"><img src="i/partners/velyka-kyshenia.png" alt=""></a></li>
-            <li><a class="partners_item" href="https://www.silpo.ua/" target="_blank"><img src="i/partners/silpo.png" alt=""></a></li>
+        <!--<div class="main_bottom__bg-img"></div>-->
+
+        <ul class="">
+            <li><a class="partners_item wow rotateIn" data-wow-duration="2s" data-wow-delay="2s" href="http://www.atbmarket.com/" target="_blank"><img src="i/partners/ATB.png" alt=""></a></li>
+            <li><a class="partners_item wow flip" data-wow-duration="2s" data-wow-delay="2s" href="http://novus.com.ua/uk" target="_blank"><img src="i/partners/novus.png" alt=""></a></li>
+            <li><a class="partners_item wow fadeOut" data-wow-duration="2s" data-wow-delay="2s" href="http://www.eko.com.ua/" target="_blank"><img src="i/partners/ekomarket.jpg" alt=""></a></li>
+            <li><a class="partners_item wow fadeInUp" data-wow-duration="2s" data-wow-delay="2s" href="http://www.billa.ua/StartPage/%D0%93%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0_/dd_bi_mainpage.aspx" target="_blank"><img src="i/partners/billa.jpg" alt=""></a></li>
+            <li><a class="partners_item wow zoomIn" data-wow-duration="2s" data-wow-delay="2s" href="http://freshbaza.com.ua/" target="_blank"><img src="i/partners/frashbaza.jpg" alt=""></a></li>
+            <li><a class="partners_item wow fadeInRight" data-wow-duration="2s" data-wow-delay="2s" href="https://megamarket.ua/" target="_blank"><img src="i/partners/megamarket.png" alt=""></a></li>
+            <li><a class="partners_item wow bounceIn" data-wow-duration="2s" data-wow-delay="2s" href="https://karavan.com.ua/" target="_blank"><img src="i/partners/Karavan-gipermarket.png" alt=""></a></li>
+            <li><a class="partners_item wow bounceOut" data-wow-duration="2s" data-wow-delay="2s" href="http://kishenya.ua/ru/" target="_blank"><img src="i/partners/velyka-kyshenia.png" alt=""></a></li>
+            <li><a class="partners_item wow fadeInLeft" data-wow-duration="2s" data-wow-delay="2s" href="https://www.silpo.ua/" target="_blank"><img src="i/partners/silpo.png" alt=""></a></li>
 
         </ul>
     </div>
-<div class="main_footer">
-    <div class="main_footer__bg-box"></div>
-    <div class="main_footer__box-bg"></div>
+    <div class="parallax-window" data-parallax="scroll" data-speed="0.1" data-image-src="i/DSC_2352.jpg">
     <div class="main_footer__content" id="vak">
-        <h2 class="main_footer__title wow bounceInRight">Вакансии</h2>
-        <p class="main_footer__text wow bounceInLeft">Если ты успешный, активный, умный, желаешь развиваться, совершенствоваться, готов работать в крупной Компании, тогда мы ждем тебя!</p>
+        <h2 class="main_footer__title wow bounceInRight" data-wow-duration="2s" data-wow-delay="1s">Вакансии</h2>
     </div>
+    </div>
+<div class="main_footer">
+    <p class="main_footer__text wow bounceInLeft">Если ты успешный, активный, умный, желаешь развиваться, совершенствоваться, готов работать в крупной Компании, тогда мы ждем тебя!</p>
+    <!--<div class="main_footer__bg-box"></div>-->
+    <!--<div class="main_footer__box-bg"></div>-->
     <div class="main_footer__content-box">
         <p class="main_footer__content-text wow bounceInDown">Мы предлагаем :</p>
         <ul class="main_footer__content-number wow fadeInRight">
@@ -461,13 +513,15 @@
 </div>
 </main>
  <footer>
-     <div class="footer_box">
-         <!--<div id="map"></div>-->
-         <div class="footer_box__bg-map"></div>
+     <div class="parallax-window" data-parallax="scroll" data-speed="0.1" data-image-src="i/box/DSC_0276.jpg">
      <div class="footer_box__content wow lightSpeedIn" id="con">
          <h2 class="footer_box__title">Контакты</h2>
-         <img class="main_top__img" src="i/light.png" alt="">
+         <!--<img class="main_top__img" src="i/light.png" alt="">-->
      </div>
+     </div>
+     <div class="footer_box">
+         <!--<div id="map"></div>-->
+         <!--<div class="footer_box__bg-map"></div>-->
          <div class="footer_box__content_box ">
      <div class="footer_box__text_box">
          <div class="footer_box__adress-box wow fadeInLeft">
@@ -524,10 +578,10 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="js/particles.min.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/granim.min.js"></script>
 <script src="js/script.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
-<script src="js/jquery.fancybox.min.js"></script>
-<script>
-</script>
+
 </body>
 </html>
