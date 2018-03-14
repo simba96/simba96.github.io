@@ -255,23 +255,38 @@ function slowScroll(id) {
     },500);
     return false;
 }
-// function openbox(menu_box) {
-//     display= document.getElementById('menu_box').style.display;
-//     if (display == "none"){
-//         document.getElementById('menu_box').style.display='block';
-//     }
-//     else {
-//         document.getElementById('menu_box').style.display='none';
-//     }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'ru', includedLanguages: 'en,es,uk', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+    }
+// var buttons = document.getElementsByClassName('butt'),
+//     forEach = Array.prototype.forEach;
+// forEach.call(buttons, function (b) {
+//     b.addEventListener('click',addElement);
+// });
+// function addElement(e) {
+//    var addDiv = document.createElement('div'),
+//       mValue = Math.max(thise.clientWidth, this.clientHeight),
+//        rect = this.getBoundingClientRect();
+//        sDiv = addDiv.style,
+//        px   = 'px';
 //
-// //
+//    sDiv.width = sDiv.height = mValue + px;
+//    sDiv.left = e.clientX - rect.left - ( mValue / 2) + px ;
+//     sDiv.top = e.clientY - rect.top - ( mValue / 2) + px ;
+//
+//
+//     addDiv.classList.add('pulse');
+//    this.appendChild(addDiv);
 // }
 $(function () {
     $('.menu_box').hide();
+    $('.newscontent').hide();
     $('button.btn-menu').click(function () {
         $('.menu_box').slideToggle('slow');
     });
-    // $('h2.btn-menu').slideToggle('slow');
+    $('h2.newstitle').click(function () {
+        $(this).next().slideToggle('slow').siblings('div:visible').slideUp('slow');
+    });
 });
 
 // document.body.onload =function () {
