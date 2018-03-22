@@ -9,7 +9,6 @@
 
 const switchMenu = $('#switch-menu');
 const navMenu = $('#nav-menu');
-
 switchMenu.click(function(){
     const $this = $(this);
     let h;
@@ -27,23 +26,17 @@ switchMenu.click(function(){
         });
     }
 });
-
 new WOW().init();
-
 function initMobile() {
     $('body').addClass('is-mobile').removeClass('is-desktop');
     console.log("is-mobile");
 }
-
-
 function initDesktop() {
     $('body').addClass('is-desktop').removeClass('is-mobile');
     switchMenu.removeClass('active');
     navMenu.removeAttr('style');
     console.log("is-desktop");
 }
-
-
 ssm.addState({
     id: 'tablet',
     query: '(max-width: 768px)',
@@ -51,7 +44,6 @@ ssm.addState({
         initMobile();
     }
 });
-
 ssm.addState({
     id: 'desktop',
     query: '(min-width: 768px)',
@@ -59,9 +51,6 @@ ssm.addState({
         initDesktop();
     }
 });
-
-
-
 $('.slider').slick({
     autoplay:true,
     autoplaySpeed:3600,
@@ -76,20 +65,6 @@ $('.slider').slick({
     cssEase: 'linear',
     draggable: true
 });
-
-//
-// $('.gallery').slick({
-//     autoplay:true,
-//     autoplaySpeed:3600,
-//     // fade:true,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     arrows: false,
-//     dots: true,
-//     dotsClass: 'dotes',
-//     cssEase: 'linear',
-//     draggable: true
-// });
 $(".userInput").focus(function () {
     $(this).parent().addClass("focus");
 }).blur(function () {
@@ -98,131 +73,14 @@ $(".userInput").focus(function () {
     }
 });
 $(document).ready(function () {
-
     $('[data-fancybox="image2"]').fancybox();
-    $('[data-fancybox="image1"]').fancybox();
-    $('[data-fancybox="image3"]').fancybox();
-    $('[data-fancybox="image-top"]').fancybox();
+    // $('[data-fancybox="image1"]').fancybox();
+    // $('[data-fancybox="image3"]').fancybox();
+    // $('[data-fancybox="image-top"]').fancybox();
     $('[data-fancybox="video"]').fancybox();
-
-
 });
 
-particlesJS('particles-js',
-
-    {
-        "particles": {
-            "number": {
-                "value": 80,
-                "density": {
-                    "enable": true,
-                    "value_area": 800
-                }
-            },
-            "color": {
-                "value": "#333"
-            },
-            "shape": {
-                "type": "circle",
-                "stroke": {
-                    "width": 0,
-                    "color": "#000000"
-                },
-                "polygon": {
-                    "nb_sides": 5
-                },
-                "image": {
-                    "src": "img/github.svg",
-                    "width": 100,
-                    "height": 100
-                }
-            },
-            "opacity": {
-                "value": 0.5,
-                "random": false,
-                "anim": {
-                    "enable": false,
-                    "speed": 1,
-                    "opacity_min": 0.1,
-                    "sync": false
-                }
-            },
-            "size": {
-                "value": 4,
-                "random": true,
-                "anim": {
-                    "enable": false,
-                    "speed": 40,
-                    "size_min": 0.1,
-                    "sync": false
-                }
-            },
-            "line_linked": {
-                "enable": true,
-                "distance": 150,
-                "color": "#333",
-                "opacity": 0.4,
-                "width": 1
-            },
-            "move": {
-                "enable": true,
-                "speed": 4,
-                "direction": "none",
-                "random": false,
-                "straight": false,
-                "out_mode": "out",
-                "attract": {
-                    "enable": false,
-                    "rotateX": 600,
-                    "rotateY": 1200
-                }
-            }
-        },
-        "interactivity": {
-            "detect_on": "canvas",
-            "events": {
-                "onhover": {
-                    "enable": true,
-                    "mode": "repulse"
-                },
-                "onclick": {
-                    "enable": true,
-                    "mode": "push"
-                },
-                "resize": true
-            },
-            "modes": {
-                "grab": {
-                    "distance": 400,
-                    "line_linked": {
-                        "opacity": 1
-                    }
-                },
-                "bubble": {
-                    "distance": 400,
-                    "size": 40,
-                    "duration": 2,
-                    "opacity": 8,
-                    "speed": 3
-                },
-                "repulse": {
-                    "distance": 200
-                },
-                "push": {
-                    "particles_nb": 4
-                },
-                "remove": {
-                    "particles_nb": 2
-                }
-            }
-        }
-    }
-
-);
 $('.slaider_autoparc').slick({
-    // autoplay:true,
-    // autoplaySpeed:3600,
-    // fade:true,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
@@ -233,12 +91,10 @@ $('.slaider_autoparc').slick({
     cssEase: 'linear',
     draggable: true
 });
-
 $('body').append('<button class="btn_up" />');
 $('.btn_up').click(function () {
     $('body').animate({'scrollTop':0}, 1000);
     $('html').animate({'scrollTop':0}, 1000);
-
 });
 $(window).scroll(function () {
     if($(window).scrollTop() > 200){
@@ -255,29 +111,6 @@ function slowScroll(id) {
     },500);
     return false;
 }
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'ru', includedLanguages: 'en,es,uk', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
-    }
-// var buttons = document.getElementsByClassName('butt'),
-//     forEach = Array.prototype.forEach;
-// forEach.call(buttons, function (b) {
-//     b.addEventListener('click',addElement);
-// });
-// function addElement(e) {
-//    var addDiv = document.createElement('div'),
-//       mValue = Math.max(thise.clientWidth, this.clientHeight),
-//        rect = this.getBoundingClientRect();
-//        sDiv = addDiv.style,
-//        px   = 'px';
-//
-//    sDiv.width = sDiv.height = mValue + px;
-//    sDiv.left = e.clientX - rect.left - ( mValue / 2) + px ;
-//     sDiv.top = e.clientY - rect.top - ( mValue / 2) + px ;
-//
-//
-//     addDiv.classList.add('pulse');
-//    this.appendChild(addDiv);
-// }
 $(function () {
     $('.menu_box').hide();
     $('.newscontent').hide();
@@ -288,17 +121,6 @@ $(function () {
         $(this).next().slideToggle('slow').siblings('div:visible').slideUp('slow');
     });
 });
-
-// document.body.onload =function () {
-//     setTimeout(function () {
-//         var preLoader= document.getElementById('page-preloader');
-//         if ( !preLoader.classList.contains('done'))
-//         {
-//             preLoader.classList.add('done');
-//         }
-//     },1000);
-// };
-
 var
     images = document.images,
     images_total_count = images.length,
@@ -311,7 +133,6 @@ for (var i = 0; i<images_total_count; i++ )
     image_clone.onload = images_loaded;
     image_clone.onerror = images_loaded;
     image_clone.src = images [i].src;
-
 }
 function images_loaded() {
     images_loaded_count++;
@@ -326,28 +147,17 @@ function images_loaded() {
             },1000);
         }
 }
-
-
 $(function() {
-
     var newSelection = "";
-
     $("#filter-nav h2").click(function(){
-
         $("#filter-item").fadeTo(200, 0.10);
-
         $("#flavor-nav h2").removeClass("current");
         $(this).addClass("current");
-
         newSelection = $(this).attr("rel");
-
         $(".all_item").not("."+newSelection).slideUp();
         $("."+newSelection).slideDown();
-
         $("#filter-item").fadeTo(600, 1);
-
     });
-
 });
 $(function () {
     $('.all_item__newscontent').hide();
@@ -355,167 +165,3 @@ $(function () {
         $(this).next().slideToggle('slow').siblings('p:visible').slideUp('slow');
     });
 });
-// $(function () {
-//     $('.all_item__newscontent').hide();
-//     $('div.all_item__content').click(function () {
-//         $(this).next().slideToggle('slow').siblings('p:visible').slideUp('slow');
-//     });
-// });
-//
-// $(function () {
-//     $('.newscontent').hide();
-//     $('h2.newstitle').click(function () {
-//         // $('.newscontent').slideToggle('slow');===================
-//         $(this).next().slideToggle('slow').siblings('div:visible').slideUp('slow');
-//     });
-// });
-// var granimInstance = new Granim({
-//     element: '#canvas-basic',
-//     direction: 'diagonal',
-//     opacity: [1, 1],
-//     states : {
-//         "default-state": {
-//             gradients: [
-//                 ['#445193', '#EAC435'],
-//                 // ['#028090', '#AAFF00'],
-//                 ['#AAFF00', '#028090'],
-//                 ['#FF9400', '#02394A'],
-//                 ['#EAC435', '#345995'],
-//                 ['#FFFD82', '#7BA800']
-//
-//
-//             ],
-//             transitionSpeed: 3500
-//         }
-//     }
-// });
-// var granimInstance = new Granim({
-//     element: '#canvas-center',
-//     direction: 'diagonal',
-//     opacity: [1, 1],
-//     states : {
-//         "default-state": {
-//             gradients: [
-//                 ['#FFFD82', '#7BA800'],
-//                 ['#445193', '#EAC435'],
-//                 // ['#028090', '#AAFF00'],
-//                 ['#AAFF00', '#028090'],
-//                 ['#EAC435', '#345995'],
-//                 ['#FF9400', '#02394A'],
-//                 // ['#EAC435', '#345995'],
-//                 // ['#FFFD82', '#7BA800']
-//
-//
-//             ],
-//             transitionSpeed: 3500
-//         }
-//     }
-// });
-// $(window).scroll(function () {
-//    $('header').css({'top': -$(window).scrollTop()/3});
-// });
-// $(document).ready(function() {
-//     $("A#trigger").toggle(function() {
-//             // Отображаем скрытый блок
-//             $("DIV#box").fadeIn(); // fadeIn - плавное появление
-//             return false; // не производить переход по ссылке
-//         },
-//         function() {
-//             // Скрываем блок
-//             $("DIV#box").fadeOut(); // fadeOut - плавное исчезновение
-//             return false; // не производить переход по ссылке
-//         }); // end of toggle()
-// }); // end of ready()
-// slider-gallery
-// $('body').append('<buttton class="btn_up" />');
-// function initMap() {
-//     var element = document.getElementById("map");
-//     var options = {
-//     zoom: 5,
-//         center:{lat:50.441877,lng:30.492683}
-//     };
-//     var myMap = new google.maps.Map(element,options);
-//
-//     addMarker({
-//         coordinates:{lat:50.441877,lng:30.492683},
-//         info:'<p class="map-info">Офис в г.Киев\n' +
-//         'ул. Дальницкая, 17,Директор Одесского филиала Катанчик Евгений Николаевич +38 (067) 654-50-37</p>'
-//         });
-//     // Офис в г.Киев
-//     // ул. Симона Петлюры, 28
-//
-//     addMarker({
-//         coordinates:{lat:46.464434,lng:30.707142},
-//         info:'<p class="map-info">Офис в г.Одесса\n' +
-//         'Руководитель коммерческого отдела Перетятая Галина Богдановна +38 (067) 465-28-32\n' +
-//         'Руководитель отдела персонала Божко Юлия Анатольевна +38 (067) 659-50-34</p>'
-//         });
-//     // addMarker({lat:50.441877,lng:30.492683});
-//
-//     function addMarker(properties) {
-//         var marker = new google.maps.Marker({
-//             position: properties.coordinates,
-//             map: myMap
-//         });
-//         if(properties.info)
-//         {
-//             var InfoWindow = new google.maps.InfoWindow({
-//                content:properties.info
-//             });
-//
-//             marker.addListener('click', function () {
-//                 InfoWindow.open(myMap, marker);
-//             });
-//         }
-//     }
-    // var InfoWindow = new google.maps.InfoWindow({
-    //    content:'<p class="map-text">hi there</p>'
-    // });
-    //
-    // marker.addListener('click', function () {
-    //     InfoWindow.open(myMap, marker);
-    // });
-
-// }
-// $(document).ready(function () {
-//
-//     $('[data-fancybox="image2"]').fancybox();
-// });
-
-
-// let elA = $('#el');
-// let BoxA = $('#boxA');
-// elA.hide();
-// BoxA.click(function sayHi(){
-//     const target = $(this).data('open');
-//     $(target).slideToggle(function(){
-//
-//     });
-// });
-// let elD = $('#eld');
-// let BoxD = $('#boxd');
-// elD.hide();
-// BoxD.click(function (){
-//     const target = $(this).data('open');
-//     $(target).slideToggle(function(){
-//     });
-// });
-//  function sayHi() {
-//     const target = $(this).data('open');
-//     $(target).slideToggle(function() {
-//         if (el.is(':hidden')) {
-//         }
-//         else {
-//         }
-// }};
-// const el1 = $('#el1');
-// const test1 = $('#hero1');
-// el1.hide();
-// test1.click(function sayHi(){
-//     const target = $(this).data('open');
-//     $(target).slideToggle(function(){
-//         if(el1.is(':hidden')) {
-//         } else {
-//         }
-//     });
-// });
