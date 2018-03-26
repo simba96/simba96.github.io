@@ -4452,8 +4452,7 @@ body {
 
 .container {
   position: relative;
-  max-width: 75.55555556rem;
-  margin: auto;
+  max-width: 75.83333333rem;
   background-size: cover;
 }
 
@@ -4811,10 +4810,12 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main_center__gallery-box {
@@ -5638,7 +5639,7 @@ textarea.userInput {
 }
 
 .slaider_autoparc {
-  width: 1345px;
+  width: 1311px;
   height: 500px;
 }
 
