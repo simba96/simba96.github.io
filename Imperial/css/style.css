@@ -5541,10 +5541,6 @@ textarea.userInput {
   position: relative;
 }
 
-.slider-box:hover .slider-box__box-hover {
-  display: block;
-}
-
 .slider-box__content {
   padding-top: 50px;
   font-size: 16px;
@@ -5962,20 +5958,6 @@ textarea.inputUser {
   .footer_box__content_box ul li {
     font-size: 15px;
   }
-  .footer_box__dws-container {
-    display: block;
-    position: fixed;
-    bottom: 0;
-    left: 5px;
-    width: 350px;
-    overflow: hidden;
-    border: 4px solid #005CA8;
-    z-index: 1000;
-    -webkit-transform: translateY(460px);
-            transform: translateY(460px);
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -6004,6 +5986,23 @@ textarea.inputUser {
     padding: 5px 5px;
     font-size: 13px;
     font-weight: 700;
+  }
+  .footer_box__content_box ul li {
+    font-size: 15px;
+  }
+  .footer_box__dws-container {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 5px;
+    width: 350px;
+    overflow: hidden;
+    border: 4px solid #005CA8;
+    z-index: 1000;
+    -webkit-transform: translateY(460px);
+            transform: translateY(460px);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
 }
 
