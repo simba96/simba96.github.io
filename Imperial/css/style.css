@@ -4557,6 +4557,7 @@ img {
 }
 
 .header ul {
+  background: rgba(255, 255, 255, 0.95);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4566,6 +4567,14 @@ img {
           flex-direction: column;
   text-align: center;
   padding-top: 10px;
+}
+
+.header ul li {
+  padding-top: 10px;
+}
+
+.header ul li:last-child {
+  padding-bottom: 10px;
 }
 
 .header__item {
@@ -4786,7 +4795,7 @@ main {
 
 .main_center__gallery_video {
   width: 250px;
-  height: 130px;
+  height: 145px;
 }
 
 .main_center__gallery-box {
