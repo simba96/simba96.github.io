@@ -4989,6 +4989,10 @@ main {
   margin-top: -20px;
 }
 
+.im {
+  display: none;
+}
+
 .footer_box {
   position: relative;
   padding-bottom: 50px;
@@ -6478,7 +6482,7 @@ textarea.inputUser {
     color: #FFF;
     text-decoration: none;
     border: 3px solid #fff;
-    padding: 10px 20px;
+    padding: 10px 100px;
     font-size: 14px;
     text-transform: uppercase;
   }
@@ -6665,6 +6669,10 @@ textarea.inputUser {
   }
   .main_center__gallery_box_content {
     display: none;
+  }
+  .im {
+    display: block;
+    margin: 0 50px;
   }
   .footer_box {
     position: relative;
@@ -7305,7 +7313,7 @@ textarea.inputUser {
     background: white;
     width: 360px;
     padding-top: 20px;
-    height: 400px;
+    height: 530px;
     position: fixed;
     top: 0;
     left: 0;
@@ -7396,5 +7404,8 @@ textarea.inputUser {
     z-index: 99;
     background: rgba(51, 51, 51, 0.8);
     display: none;
+  }
+  textarea {
+    resize: none;
   }
 }
