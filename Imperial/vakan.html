@@ -658,6 +658,7 @@
     <p class="menu_box__open_fast"><i class=" fa fa-envelope" aria-hidden="true"></i> Отправить Резюме</p>
 </div>
     <div class="popup">
+        <img class="popup__img" src="i/favicon.png" alt="">
     <div class="popup__dws-container">
         <form class="popup__formBox wow lightSpeedIn" action="mail.php" method="post" enctype="multipart/form-data">
             <div class="boxInput ">
@@ -667,6 +668,10 @@
             <div class="boxInput ">
                 <label class="textLabel">E-mail:</label>
                 <input class="inputUser" type="email" name="user_email" required>
+            </div>
+            <div class="boxInput">
+                <label class="textLabel">Номер телефона:</label>
+                <input class="inputUser" type="phone" name="user_phone" required pattern="\d+">
             </div>
             <div class="boxInput">
                 <input class="inputUser" type="file" name="upload" required pattern="\d+">

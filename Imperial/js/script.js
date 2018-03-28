@@ -72,13 +72,13 @@ $(".userInput").focus(function () {
         $(this).parent().removeClass("focus");
     }
 });
-$(document).ready(function () {
-    $('[data-fancybox="image2"]').fancybox();
-    // $('[data-fancybox="image1"]').fancybox();
-    // $('[data-fancybox="image3"]').fancybox();
-    // $('[data-fancybox="image-top"]').fancybox();
-    $('[data-fancybox="video"]').fancybox();
-});
+// $(document).ready(function () {
+//     $('[data-fancybox="image2"]').fancybox();
+//     // $('[data-fancybox="image1"]').fancybox();
+//     // $('[data-fancybox="image3"]').fancybox();
+//     // $('[data-fancybox="image-top"]').fancybox();
+//     $('[data-fancybox="video"]').fancybox();
+// });
 
 $('.slaider_autoparc').slick({
     slidesToShow: 1,
