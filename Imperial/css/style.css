@@ -6079,10 +6079,10 @@ textarea {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    margin-right: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0;
     min-height: 500px;
     padding: 20px 0;
   }
@@ -6093,7 +6093,7 @@ textarea {
     font-size: 10px;
   }
   .menu_box__oll_item_nav {
-    display: block;
+    display: none;
     position: fixed;
     left: 30px;
     top: 30px;
