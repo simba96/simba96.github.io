@@ -6746,45 +6746,6 @@ textarea {
 }
 
 @media only screen and (min-width: 1200px) {
-  * {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  html {
-    font-size: 18px;
-  }
-  body {
-    font: 0.77777778rem "Open Sans", sans-serif;
-    color: white;
-    min-height: 100vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .container-fluid {
-    width: 100%;
-  }
-  .main-content {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-  .container {
-    position: relative;
-    max-width: 75.83333333rem;
-    background-size: cover;
-  }
-  .headtitle {
-    position: absolute;
-    left: -9999px;
-    top: -9999px;
-  }
-  img {
-    vertical-align: top;
-  }
   .preloader-2 {
     background: #005CA8 url(http://hello-site.ru//main/images/preloads/spinning-circles.svg) center center no-repeat;
     background-size: 200px;
