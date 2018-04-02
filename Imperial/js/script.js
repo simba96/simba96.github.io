@@ -78,17 +78,6 @@ $(".userInput").focus(function () {
 //     $('[data-fancybox="video"]').fancybox();
 // });
 
-$('.slaider_autoparc').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: "<div class='myprev'><i class=\"fa fa-long-arrow-left\" aria-hidden=\"true\"></i></div>",
-    nextArrow: "<div class='mynext'><i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\"></i></div>",
-    dots: false,
-    dotsClass: 'false',
-    cssEase: 'linear',
-    draggable: true
-});
 $('body').append('<button class="btn_up" />');
 $('.btn_up').click(function () {
     $('body').animate({'scrollTop':0}, 1000);
