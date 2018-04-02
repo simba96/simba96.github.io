@@ -4448,7 +4448,7 @@ body {
 
 .container {
   position: relative;
-  max-width: 75.83333333rem;
+  max-width: 105.55555556rem;
   margin: auto;
   background-size: cover;
 }
@@ -4500,7 +4500,6 @@ img {
 }
 
 .top-box {
-  background: #eeba54;
   padding-bottom: 100px;
   position: relative;
 }
@@ -4634,11 +4633,6 @@ main {
   color: #fff;
 }
 
-.main_top__img-main {
-  background: url(../i/imperial1.jpg) calc(80%) no-repeat;
-  background-size: cover;
-}
-
 .main_top__title {
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
   text-transform: uppercase;
@@ -4760,11 +4754,6 @@ main {
   opacity: 0.2;
 }
 
-.main_center__img-main {
-  background: url(../i/imperial2.jpg) calc(50%) no-repeat;
-  background-size: cover;
-}
-
 .main_center__content {
   text-align: center;
   color: #fff;
@@ -4854,11 +4843,6 @@ main {
   color: #fff;
 }
 
-.main_bottom__img-main {
-  background: url(../i/imperial3.jpg) calc(50%) no-repeat;
-  background-size: cover;
-}
-
 .main_bottom__title {
   font-weight: 700;
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
@@ -4908,11 +4892,6 @@ main {
   background-size: cover;
   text-align: center;
   color: #fff;
-}
-
-.main_footer__img-main {
-  background: url(../i/DSC_2352.jpg) calc(45%) 0 no-repeat;
-  background-size: cover;
 }
 
 .main_footer__title {
@@ -5028,6 +5007,7 @@ main {
   -ms-flex-preferred-size: 400px;
       flex-basis: 400px;
   height: 300px;
+  margin-top: 5px;
 }
 
 .car_gallery__container img {
@@ -5068,9 +5048,107 @@ main {
   padding-left: 30px;
 }
 
+.car_gallery__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.car_gallery__nav li {
+  margin-right: 0;
+  margin-top: 7px;
+}
+
+.car_gallery__nav li:last-child {
+  margin-right: 0;
+}
+
+.car_gallery__nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  padding: 5px 5px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #005CA8;
+}
+
+.car_gallery__nav_box ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .car_gallery__video {
   width: 300px;
   height: 250px;
+}
+
+#home {
+  background: url(../i//imperial-bg/imperial-2.jpg);
+  background-attachment: fixed;
+  background-origin: initial;
+  background-clip: initial;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  position: relative;
+}
+
+#about {
+  background: url(../i//imperial-bg/imperial-1.jpg);
+  background-attachment: fixed;
+  background-origin: initial;
+  background-clip: initial;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  position: relative;
+}
+
+#blog {
+  background: url(../i//imperial-bg/imperial-6.jpg);
+  background-attachment: fixed;
+  background-origin: initial;
+  background-clip: initial;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  position: relative;
+}
+
+#vakansii {
+  background: url(../i//imperial-bg/imperial-3.jpg);
+  background-attachment: fixed;
+  background-origin: initial;
+  background-clip: initial;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  position: relative;
+}
+
+#contact {
+  background: url(../i//imperial-bg/imperial-5.jpg);
+  background-attachment: fixed;
+  background-origin: initial;
+  background-clip: initial;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  position: relative;
 }
 
 .footer_box {
@@ -5087,10 +5165,6 @@ main {
 .footer_box__contact {
   color: #333;
   font-size: 20px;
-}
-
-.footer_box__img-main {
-  background: url(../i//box/DSC_0276.jpg) calc(100%) no-repeat;
 }
 
 .footer_box__title {
@@ -5899,8 +5973,17 @@ textarea {
   opacity: 0;
 }
 
-.is-mobile .nav-menu {
+.is-mobile .car_gallery__nav_box {
   display: none;
+}
+
+@media only screen and (min-width: 420px) {
+  .car_gallery__container li {
+    -ms-flex-preferred-size: 400px;
+        flex-basis: 400px;
+    height: 300px;
+    margin-top: 0;
+  }
 }
 
 @media only screen and (min-width: 576px) {
@@ -6353,6 +6436,39 @@ textarea {
             transform: translateY(460px);
     -webkit-transition: 0.5s;
     transition: 0.5s;
+  }
+  .car_gallery__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .car_gallery__nav li {
+    margin-right: 10px;
+    margin-top: 0;
+  }
+  .car_gallery__nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    padding: 5px 0;
+    font-size: 12px;
+    font-weight: 700;
+    color: #005CA8;
+  }
+  .car_gallery__nav_box ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .btn-menu:hover {
     -webkit-transform: scale(1.1);
@@ -6809,7 +6925,7 @@ textarea {
     text-transform: uppercase;
     font-size: 60px;
     font-weight: 700;
-    padding: 180px 0;
+    padding: 250px 0;
   }
   .main_top__img {
     width: 60px;
@@ -6978,7 +7094,7 @@ textarea {
     text-transform: uppercase;
     font-size: 60px;
     font-weight: 700;
-    padding: 180px 0;
+    padding: 250px 0;
   }
   .main_center__gallery {
     display: -webkit-box;
@@ -7120,7 +7236,7 @@ textarea {
     text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
     text-transform: uppercase;
     font-size: 60px;
-    padding: 180px 0;
+    padding: 250px 0;
   }
   .main_footer__text {
     color: #333;
@@ -7248,9 +7364,39 @@ textarea {
     font-weight: 400;
     margin-top: 0;
   }
+  .car_gallery__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .car_gallery__nav li {
+    margin-right: 20px;
+  }
+  .car_gallery__nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    padding: 5px 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #005CA8;
+  }
+  .car_gallery__nav_box ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .car_gallery__video {
     width: 500px;
     height: 250px;
+  }
+  .is-mobile .nav-menu {
+    display: none;
   }
   .footer_box {
     position: relative;
@@ -7274,7 +7420,7 @@ textarea {
     text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
     text-transform: uppercase;
     font-size: 60px;
-    padding: 180px 0;
+    padding: 250px 0;
   }
   .footer_box__content_box {
     text-align: center;
