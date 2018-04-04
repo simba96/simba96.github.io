@@ -4504,7 +4504,6 @@ img {
   position: relative;
   background: url(../i//imperial-bg/imperial-1.2.jpg);
   background-size: cover;
-  height: 900px;
 }
 
 #particles-js {
@@ -4518,7 +4517,7 @@ img {
 .header {
   z-index: 1000;
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 550px;
 }
 
 .header__nav {
