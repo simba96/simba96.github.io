@@ -593,6 +593,7 @@ img {
 
 .main__buttonCheck {
   position: relative;
+  cursor: pointer;
   color: black;
 }
 
